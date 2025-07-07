@@ -1,0 +1,22 @@
+{
+  "name": "my-mini-react",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mini React implementation for learning purposes",
+  "scripts": {
+    "dev": "pnpm --filter example dev",
+    "dev:watch": "pnpm --parallel --filter \"./packages/**\" watch & pnpm --filter example dev",
+    "build": "pnpm --filter \"./packages/**\" build",
+    "build:example": "pnpm --filter example build",
+    "clean": "rimraf node_modules **/*/node_modules **/*/dist"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

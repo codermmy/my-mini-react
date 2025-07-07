@@ -1,0 +1,15 @@
+{
+  "name": "@mini-react/shared",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --project ../../tsconfig.dev.json --watch --preserveWatchOutput"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+} 

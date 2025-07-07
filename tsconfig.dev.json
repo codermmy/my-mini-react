@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "checkJs": false,
+    "allowJs": true,
+    "declaration": false,
+    "emitDeclarationOnly": false,
+    "types": ["node"]
+  }
+} 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 字符集设置 - 指定文档使用的字符编码 -->
+    <meta charset="UTF-8" />
+    
+    <!-- 网站图标 - 显示在浏览器标签上的小图标 -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    
+    <!-- 视口设置 - 控制页面在移动设备上如何显示 -->
+    <!-- width=device-width 将页面宽度设置为设备屏幕宽度 -->
+    <!-- initial-scale=1.0 设置初始缩放级别 -->
+    <!-- 这确保页面在移动设备上正确显示，不会被缩小 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- 页面标题 - 显示在浏览器标签上 -->
+    <title>Mini React Example</title>
+    
+    <!-- 页面样式 - 内联 CSS -->
+    <style>
+      /* 基本样式重置，确保一致的边距和填充 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      /* 设置整个页面的基本样式 */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+          Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        line-height: 1.6;
+      }
+      
+      /* 应用容器样式 */
+      #root {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      /* 主标题样式 */
+      h1 {
+        color: #0066cc;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      
+      /* 副标题样式 */
+      h2 {
+        color: #444;
+        margin: 15px 0;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #ddd;
+      }
+      
+      /* 按钮基本样式 */
+      button {
+        background-color: #0066cc;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        margin: 5px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+      }
+      
+      /* 按钮悬停效果 */
+      button:hover {
+        background-color: #0055aa;
+      }
+      
+      /* 容器样式 */
+      .container {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      /* 计数器显示样式 */
+      .counter {
+        font-size: 24px;
+        font-weight: bold;
+        color: #0066cc;
+        margin: 10px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 根容器 - Mini React 将在这里渲染应用 -->
+    <div id="root"></div>
+    
+    <!-- 脚本标签 - 指定入口点 -->
+    <!-- type="module" 允许使用 ES 模块语法 (import/export) -->
+    <!-- 当 Vite 开发服务器运行时，它会处理这个导入，提供热重载等功能 -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html> 

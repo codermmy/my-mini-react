@@ -1,0 +1,18 @@
+{
+  "name": "@mini-react/reconciler",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@mini-react/core": "workspace:*",
+    "@mini-react/shared": "workspace:*",
+    "@mini-react/scheduler": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+} 

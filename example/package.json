@@ -1,0 +1,19 @@
+{
+  "name": "@mini-react/example",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mini-react/core": "workspace:*",
+    "@mini-react/dom": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  }
+}
